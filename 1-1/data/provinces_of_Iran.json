@@ -1,0 +1,248 @@
+[
+  {
+    "name": "Alborz",
+    "cities": [
+      "Karaj",
+      "Taleghan",
+      "Hashtgerd"
+    ]
+  },
+  {
+    "name": "Ardabil",
+    "cities": [
+      "Ardabil",
+      "Meshgin Shahr",
+      "Namin"
+    ]
+  },
+  {
+    "name": "Bushehr",
+    "cities": [
+      "Bushehr",
+      "Dashtestan",
+      "Dashti"
+    ]
+  },
+  {
+    "name": "Chaharmahal and Bakhtiari",
+    "cities": [
+      "Shahrekord",
+      "Borujen",
+      "Farsan"
+    ]
+  },
+  {
+    "name": "East Azerbaijan",
+    "cities": [
+      "Tabriz",
+      "Maragheh",
+      "Ahar"
+    ]
+  },
+  {
+    "name": "Isfahan",
+    "cities": [
+      "Isfahan",
+      "Kashan",
+      "Shahinshahr"
+    ]
+  },
+  {
+    "name": "Fars",
+    "cities": [
+      "Shiraz",
+      "Marvdasht",
+      "Kazerun"
+    ]
+  },
+  {
+    "name": "Gilan",
+    "cities": [
+      "Rasht",
+      "Anzali",
+      "Astara"
+    ]
+  },
+  {
+    "name": "Golestan",
+    "cities": [
+      "Gorgan",
+      "Aliabad",
+      "Kordkuy"
+    ]
+  },
+  {
+    "name": "Hamadan",
+    "cities": [
+      "Hamadan",
+      "Malayer",
+      "Nahavand"
+    ]
+  },
+  {
+    "name": "Hormozgan",
+    "cities": [
+      "Bandar Abbas",
+      "Jask",
+      "Qeshm"
+    ]
+  },
+  {
+    "name": "Ilam",
+    "cities": [
+      "Ilam",
+      "Dehloran",
+      "Mehran"
+    ]
+  },
+  {
+    "name": "Kerman",
+    "cities": [
+      "Kerman",
+      "Bam",
+      "Rafsanjan"
+    ]
+  },
+  {
+    "name": "Kermanshah",
+    "cities": [
+      "Kermanshah",
+      "Sarpol-e Zahab",
+      "Paveh"
+    ]
+  },
+  {
+    "name": "Khuzestan",
+    "cities": [
+      "Ahvaz",
+      "Abadan",
+      "Khorramshahr"
+    ]
+  },
+  {
+    "name": "Kohgiluyeh and Boyer-Ahmad",
+    "cities": [
+      "Yasuj",
+      "Gachsaran",
+      "Dena"
+    ]
+  },
+  {
+    "name": "Kurdistan",
+    "cities": [
+      "Sanandaj",
+      "Baneh",
+      "Saghez"
+    ]
+  },
+  {
+    "name": "Lorestan",
+    "cities": [
+      "Khorramabad",
+      "Borujerd",
+      "Dorud"
+    ]
+  },
+  {
+    "name": "Markazi",
+    "cities": [
+      "Arak",
+      "Saveh",
+      "Mahallat"
+    ]
+  },
+  {
+    "name": "Mazandaran",
+    "cities": [
+      "Sari",
+      "Babol",
+      "Amol"
+    ]
+  },
+  {
+    "name": "North Khorasan",
+    "cities": [
+      "Bojnurd",
+      "Jajarm",
+      "Esfarayen"
+    ]
+  },
+  {
+    "name": "Qazvin",
+    "cities": [
+      "Qazvin",
+      "Takestan",
+      "Buin Zahra"
+    ]
+  },
+  {
+    "name": "Qom",
+    "cities": [
+      "Qom",
+      "Jafariyeh",
+      "Kahak"
+    ]
+  },
+  {
+    "name": "Razavi Khorasan",
+    "cities": [
+      "Mashhad",
+      "Sabzevar",
+      "Neyshabur"
+    ]
+  },
+  {
+    "name": "Semnan",
+    "cities": [
+      "Semnan",
+      "Shahrood",
+      "Mehdishahr"
+    ]
+  },
+  {
+    "name": "Sistan and Baluchestan",
+    "cities": [
+      "Zahedan",
+      "Chabahar",
+      "Iranshahr"
+    ]
+  },
+  {
+    "name": "South Khorasan",
+    "cities": [
+      "Birjand",
+      "Qaen",
+      "Nehbandan"
+    ]
+  },
+  {
+    "name": "Tehran",
+    "cities": [
+      "Tehran",
+      "Rey",
+      "Shahr-e Qods"
+    ]
+  },
+  {
+    "name": "Yazd",
+    "cities": [
+      "Yazd",
+      "Mehriz",
+      "Ardakan"
+    ]
+  },
+  {
+    "name": "Zanjan",
+    "cities": [
+      "Zanjan",
+      "Abhar",
+      "Khorramdarreh"
+    ]
+  },
+  {
+    "name": "Not_Set",
+    "cities": [
+      "Not_Set"
+    ]
+  }
+]

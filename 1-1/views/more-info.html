@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="/stylesheets/more-info.css">
+    <title>Employee More_Info Page</title>
+  </head>
+  <body>
+    
+    <form > 
+  <div class="form-group">
+    <label for="_id">ID:</label>
+    <input readonly type="text" name="_id" class="form-control" id="_id"  placeholder="id">
+  </div>
+
+  <div class="form-group">
+    <label for="first_name">First Name:</label>
+    <input type="text" name="first_name" class="form-control" id="first_name"  placeholder="first_name">
+  </div>
+
+  <div class="form-group">
+    <label for="last_name">Last Name:</label>
+    <input type="text" name="last_name" class="form-control" id="last_name"  placeholder="last_name">
+  </div>
+
+  <div class="form-group">
+    <label for="gender">Gender:</label>
+    <input type="text" name="gender" class="form-control" id="gender"  placeholder="gender">
+  </div>
+
+  <div class="form-group">
+    <label for="birthday">Birthday:</label>
+    <input type="date"  name="birthday" class="form-control" id="birthday"  placeholder="birthday">
+  </div>
+
+  <div class="form-group">
+    <label for="national_code">National Code:</label>
+    <input type="text" name="national_code" class="form-control" id="national_code"  placeholder="">
+  </div>
+
+  <div class="form-group">
+    <label for="province">Province:</label>
+    <input type="text" name="province" class="form-control" id="province"  placeholder="province">
+  </div>
+
+  <!-- <div class="form-group">
+    <label for="company">Company:</label>
+    <input type="text" name="company" class="form-control" id="company"  placeholder="company">
+  </div> -->
+
+     <!-- Company input -->
+            <div class="mb-3">
+              <label for="company" class="form-label"
+                >Company *</label
+              >
+               <select
+                id="company"
+                class="form-select"
+                aria-label="Default select example"
+              >
+              <option selected>--Choose a company--</option>
+              </select>
+            </div>
+
+  <div class="form-group">
+    <label for="role">Role:</label>
+    <input type="text" name="role" class="form-control" id="role"  placeholder="role">
+  </div>
+
+  <div class="form-group">
+    <label for="phone_number">Phone Number:</label>
+    <input type="text" name="phone_umber" class="form-control" id="phone_number"  placeholder="phone_number">
+  </div>
+
+</form>
+ <button id="update_btn" class="btn btn-primary">Update</button>
+  <button id="delete_btn"  class="btn btn-warning">Delete</button>
+
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.4.min.js"
+      integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+      integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/javascripts/more-info.js"></script>
+  </body>
+</html>
