@@ -51,7 +51,7 @@ const companySchema = new Schema(
         unique: true,
         type: String,
         required: true,
-        validate: /^0\d{2,3}-\d{7}$/,
+        // validate: /^0\d{2,3}-\d{7}$/,
       },
     ],
   },

@@ -32,7 +32,11 @@ $(async() => {
                 </tr>
                 `
         );
+        this.HandleMoreInfoButtonOnClick = (id) => {
+          window.location.href = `http://localhost:4000/companyMoreInfo?id=${id}`;
+        };
       }
+       
 
     } catch (error) {
         console.log(error);

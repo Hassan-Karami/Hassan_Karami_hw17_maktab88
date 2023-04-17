@@ -37,6 +37,7 @@ const createCompany = async(req,res,next)=>{
           registration_number: req.body.registration_number,
           province: req.body.province,
           city: req.body.city,
+          phone_number: req.body.phone_number
         });
         newCompany
           .save()

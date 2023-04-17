@@ -21,6 +21,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use("/employee",employeeRouter);
 app.use("/company",companyRouter)
+
 //All Employees List route
 app.get("/employees-list",(req,res)=>{
     // res.render("./employees-list");
@@ -36,6 +37,11 @@ app.get("/more-info", (req,res)=>{
 app.get("/companies-list", (req, res) => {
   res.sendFile(path.join(__dirname, "./views/companies-list.html"));
 });
+
+//company mor-info page
+app.get("/companyMoreInfo",(req,res)=>{
+  res.sendFile(path.join(__dirname, "/views/companyMoreInfo.html"));
+})
 
 
 app.use(function(req, res, next) {
