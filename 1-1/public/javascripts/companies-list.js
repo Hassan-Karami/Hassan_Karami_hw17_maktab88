@@ -1,9 +1,19 @@
-$(async() => {
+$(() => {
+  const creationModal = $("#creationModal");
+  const creationModalSubmitButton = $("#creationModal-submitButton");
+  const creationModalCloseButton = $("#creationModal-CloseButton");
+
+  const creationModal_nameInput = $("#creationModal-nameInput");
+  const creationModal_registrationNumberInput = $("#creationModal-registrationNumberInput");
+  const creationModal_provinceInput = $("#creationModal-provinceInput");
+  const creationModal_cityInput = $("#creationModal-cityInput");
+  const creationModal_phoneInput = $("#creationModal-phoneInput");
+  (async()=>{
+    
     try {
       //get all companies with fetch
       const responseObject = await fetch("http://localhost:4000/company", {});
       const allCompanies = await responseObject.json();
-      console.log(allCompanies);
       //sort companies based on registration_number
       allCompanies.sort(function (a, b) {
         return a.registration_number.localeCompare(
@@ -15,17 +25,16 @@ $(async() => {
         );
       });
 
-      
-      console.log(allCompanies.length);
-
-      for(let i=0; i<allCompanies.length;i++){
+      for (let i = 0; i < allCompanies.length; i++) {
         $("tbody").append(
           `
                 <tr>
                 <th scope="row">${i + 1}</th>
                 <td>${allCompanies[i].name}</td>
                 <td>${allCompanies[i].province}</td>
-                <td>${convertDateToyymmdd(allCompanies[i].createdAt)}</td>
+                <td>${convertDateToyymmdd(
+                  allCompanies[i].registrationDate
+                )}</td>
                 <td><button onclick="HandleMoreInfoButtonOnClick('${
                   allCompanies[i]._id
                 }')" type="button" class="btn btn-primary">More Info</button></td>
@@ -36,11 +45,40 @@ $(async() => {
           window.location.href = `http://localhost:4000/companyMoreInfo?id=${id}`;
         };
       }
-       
-
     } catch (error) {
-        console.log(error);
+      console.log(error);
     }
+  })()
+
+  creationModalSubmitButton.on("click",async(e)=>{
+    const newCompany = {
+      name: creationModal_nameInput.val(),
+      registration_number: creationModal_registrationNumberInput.val(),
+      province: creationModal_provinceInput.val(),
+      city: creationModal_cityInput.val(),
+      phone_number: [creationModal_phoneInput.val()]
+    };
+
+    const responseObject = await fetch("http://localhost:4000/company", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json; charset=UTF-8",
+      },
+      body: JSON.stringify(newCompany),
+    });
+    const createdCompany = await responseObject.json();
+    console.log(responseObject);
+    if(responseObject.status===201){
+       setTimeout(() => {
+         window.location.reload();
+       }, 200);
+    }
+    
+   
+    
+
+  })
+
 })
 
 

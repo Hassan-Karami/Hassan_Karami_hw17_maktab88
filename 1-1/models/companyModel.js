@@ -27,19 +27,19 @@ const companySchema = new Schema(
       enum: validProvinces,
       default: "Not_Set",
     },
+    
+
     city: {
       type: String,
       validate: {
-        validator: function (city) {
+        validator: function (city){
           const selectedProvince = this.province;
           const targetProvince = ProvinceOfIran.find(
             (province) => province.name === selectedProvince
           );
-
           if (!targetProvince) {
             return false;
           }
-
           return targetProvince.cities.includes(city);
         },
         message: "Invalid city for the selected province",

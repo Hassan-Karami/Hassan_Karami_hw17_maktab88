@@ -8,7 +8,7 @@ const path= require("path");
 const getAllCompanies = async(req,res,next)=>{
   try {
       const allCompanies = await Company.find({}, { __v: 0 });
-      res.send(allCompanies);
+      res.status(200).send(allCompanies);
   } catch (error) {
     console.log(error.message);
     next({
@@ -26,7 +26,7 @@ const getSingleCompany = async (req,res,next)=>{
     next({status:400,message: `company with id: ${req.params.id} doesnt exist`});
   }
   console.log(targetCompany);
-  res.send(targetCompany)
+  res.status(200).send(targetCompany)
 }
 
 //Create New Company
@@ -57,12 +57,12 @@ const createCompany = async(req,res,next)=>{
 //Delete Company
 const deleteCompany = async(req,res,next)=>{
 try {
-  const id = new mongoose.Types.ObjectId(req.body.id);
+  const id = new mongoose.Types.ObjectId(req.body._id);
   const deletedCompany= await Company.findByIdAndDelete(id,{new:true});
   if(!deletedCompany){
     return next({ status: 400, message: "this company does not exist" });
   }
-  res.send(deletedCompany);
+  res.status(200).send(deletedCompany);
 } catch (error) {
     console.log(error.message);
     next({
@@ -85,12 +85,9 @@ const updateCompany = async (req,res,next)=>{
    if (!!registration_number)
      updateBody.registration_number = registration_number;
    if (!!province) updateBody.province = province;
-   if (!!city) updateBody.city = city;
-   
-   const updatedCompany = await Company.findOneAndUpdate({_id}, updateBody , {new: true,runValidators:true});
-   res.send(updatedCompany);
-  
- 
+   if (!!city) updateBody.city = city; 
+   const updatedCompany = await Company.findOneAndUpdate(_id, updateBody , {new: true});
+   res.status(200).send(updatedCompany);
 }
 
 
